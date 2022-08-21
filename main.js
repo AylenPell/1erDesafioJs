@@ -1,11 +1,16 @@
 let randomNum = Math.round(Math.random()*10);
-let numElegido = parseInt(prompt("Adivina el numero que estoy pensando"));
+let numElegido = parseInt(prompt("Adiviná el número que estoy pensando, tenés 3 intentos! Una pista? Está entre 0 y 10..."));
+let i = 0;
 
-
-while (numElegido !== randomNum){
-        
-    numElegido = parseInt(prompt("Volve a intentarlo"));
+while (numElegido !== randomNum && i<2){
+    i ++;
+    numElegido = parseInt(prompt("No es es el número correcto! Volvé a intentarlo"));
     
 }
 
-alert ("Muy bien! Adivinaste!");
+if (numElegido === randomNum) {
+    alert ("Muy bien! Adivinaste!");
+}else if (numElegido !== randomNum){
+alert ("Se agotaron tus 3 intentos! :( Actualizá la página para volver a intentarlo.");
+}
+alert ("Actualizá la página para volver a intentarlo.");
