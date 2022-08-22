@@ -11,6 +11,6 @@ while (numElegido !== randomNum && i<2){
 if (numElegido === randomNum) {
     alert ("Muy bien! Adivinaste!");
 }else if (numElegido !== randomNum){
-alert ("Se agotaron tus 3 intentos! :( Actualizá la página para volver a intentarlo.");
+alert (`Se agotaron tus 3 intentos! :( El número era el ${randomNum}... Actualizá la página para volver a intentarlo.`);
 }
 alert ("Actualizá la página para volver a intentarlo.");
